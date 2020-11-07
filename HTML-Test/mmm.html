@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>                                                  <!-- 这是一个注释 -->
+<!-- html是网页的结构，CSS是网页的样式，javascript是行为。结构就是盖房子先要把结构建出来，然后用CSS来装饰。 -->
+<head>
+<meta charset="UTF-8">                                  <!-- 乱码 -->
+<title>哈哈哈</title>                                   <!-- 文档标题 -->
+<!-- 
+<base href="//www.w3cschool.cn/images/" target="_blank"> 
+<base> 标签描述了基本的链接地址/链接目标，该标签作为HTML文档中所有的链接标签的默认链接(包括图片链接) 
+-->
+ 
+<style type="text/css">
+    body{
+    	background-image:url('https://7n.w3cschool.cn/attachments/knowledge/201611/31824.png');
+    	background-repeat:no-repeat;
+    	background-attachment:fixed;
+    	background-position:right top;
+    }
+    h1 {color:Aquamarine;
+        font-family："sans-serif";
+        font-size:40px;
+        text-decoration:overline;
+        text-shadow:5px 5px #FF0000;
+        font-weight:bold;
+        font-style:italic;
+        cursor:crosshair;                       
+       } 
+    h2 {text-decoration:line-through;} 
+    h3 {text-decoration:underline;}
+    h4 {visibility:hidden;
+        display:none;}
+    p { text-indent:50px;
+        word-spacing:30px;
+        letter-spacing:2px;
+        line-height:70%;
+        max-width: 
+        min-height:
+      }
+    p.uppercase {text-transform:uppercase;}                                                
+    p.important {color:blue;
+    	         direction:rtl;
+
+                }
+    .center{
+	text-align:center;
+    }
+    table{
+    	border-collapse: collapse;
+    	width:300px;
+    	height: 200px;
+    }
+    td 
+    { 
+        text-align:right;
+        vertical-align:bottom; 
+    }
+    div.ex
+    {
+        width:300px;
+        padding:50px;
+        border:5px double gray;
+        outline:green dotted 5px; 
+        margin:0px;
+    }
+    div.scroll
+    {
+	    background-color:#00FFFF;
+	    width:100px;
+	    height:100px;
+	    overflow:scroll;
+    }
+    img.a1 
+    {
+	    position:absolute;
+	    clip:rect(0px,0px,0px,0px);
+	    float:left;
+    }
+</style>
+<!-- body -->                                                                
+<!-- text是指对象为网页中的文本,css或是javascript是指当前指定的文本类型 -->
+<!-- background-image:url背景图片，font-family字体类型，font-size字体大，font-weight字体粗细，font-style字体样式（斜体）。 -->
+<!-- background-repeat:no-repeat背景图片不平铺，background-repeat:repeat-x水平平铺 -->
+<!-- background-position:设置图片位置，若为background-position:66% 33%;则表示图片在水平方向 2/3、垂直方向 1/3 处 -->
+<!-- 当使用简写属性时，属性值的顺序为：:
+background-color
+background-image
+background-repeat
+background-attachment  //背景图像是否固定或者随着页面的其余部分滚动。
+background-position -->
+
+<!-- h1 -->
+<!-- text-decoration属性用来设置或删除文本的装饰，text-decoration:none删除链接的下划线。 -->
+<!-- text-shadow添加文本阴影。 -->
+<!-- cursor:crosshair改变鼠标移到文本上时的样式。 -->
+<!-- h4 -->
+<!-- visibility:hidden;使文本隐藏，但仍然占空间，display:none;使文本隐藏，但不占空间。 -->
+<!-- p -->
+<!-- text-indent指定文本的第一行的缩进。 -->
+<!-- word-spacing改变字（单词）之间的标准间隔。其默认值 normal 与设置值为 0 是一样的。。 -->
+<!-- letter-spacing增加或减少字符之间的空间 -->
+<!-- line-height指定行之间的空间。 -->
+<!-- text-transform指定在一个文本中的大写和小写字母，uppercase全大写，lowercase全小写，capitalize每单词首字母大写 -->
+<!-- direction:rtl改变元素的文本方向从右到左 -->
+<!-- table\td -->
+<!-- border-collapse属性设置表格的边框是否被折叠成一个单一的边框或隔开 -->
+<!-- width、height设置表格长宽，若为百分比表示占整个窗口比例 -->
+<!-- text-align、vertical-align水平和垂直对齐方式 -->
+<!-- div -->
+<!-- div.ex定义了一个盒子,border定义边框样式，分别为border-width（边框宽度）、border-style (边框样式)、border-color -->
+<!-- outline定义轮廓 -->
+<!-- div.scroll使用滚动条来显示元素内溢出的内容，可以通过改变overflow值处理溢出内容 -->
+<!-- img -->
+<!-- position:absolute;clip:rect(0px,0px,0px,0px);对图片裁剪，分别为上、右、下、左 -->
+<!-- float:left 的图片。导致图片将会浮动在段落的左边 -->
+
+
+
+
+<meta http-equiv="refresh" content="300">               <!-- 每300秒钟刷新当前页面 -->
+<script type="text/javascript"></script>                <!-- <script>标签用于加载脚本文件，如： JavaScript -->
+<script src="js.js"></script>
+                                           
+
+
+</head>
+
+<body style="background-color:white">                  <!-- 背景颜色 -->
+
+<h1 style="text-align: center;">标题一</h1>
+<h2 class="center">标题二</h2>
+<h3>标题三</h3>
+<br>                                                    <!-- 换行 -->
+<p style="font-family:arial;color:red;font-size:20px;margin-left:20px;">mm</p><!-- 段落,字体格式、颜色、字体大小和左外边距 -->
+<p class="important">hello hello</p>
+<b>加粗文本</b><br>                                     <!-- 文本加粗 -->
+<i>斜体文本</i><br>                                     <!-- 斜体文本 -->
+<code>电脑自动输出</code><br>                           <!-- 电脑自动输出 -->
+这是<sup style="color:#0000FF">上标</sup>和<sub>下标</sub><br><!-- 上标和下标 -->
+<p>我的母亲有 <span style="color:green">绿色</span> 的眼睛。</p><!-- span对部分文本样式化 -->
+<p>&lt\&#60</p>                                         <!-- 如需显示小于号，我们必须这样写：&lt; 或 &#60; 或 &#060; -->
+<hr>                                                    <!-- 加一条水平线 -->
+
+<pre>
+此例演示如何使用 pre 标签
+对空行和    空格
+进行控制
+</pre>                                                  <!-- 用pre对空行和空格进行控制 -->
+<img src="385101.jpg" width="900px" height="550px"><br> <!-- 图片 -->
+<img src="eg_compman.gif" alt="Big Boat"><br>           <!-- 动图，若是加载失败则显示alt内容 -->
+
+<a href="http://www.w3cschool.cn">这是一个链接</a><br>
+<a href="http://www.w3cschool.cn" style="text-decoration:none;">这是一个没有下划线的链接</a><br>
+<a href="http://www.w3cschool.cn" target="_blank">打开新窗口的链接</a><br><!-- 定义target="_blank"使被链接的文档在新的窗口打开 -->
+<a href="http://www.w3cschool.cn"><img src="1173380.jpg" width="900" height="550"></a><br><!-- 图片链接 --> 
+<a href="http://www.w3cschool.cn"><img border="0" src="1173380.jpg" width="900" height="550"></a><!-- 无边框图片链接 -->                                              
+<p><bdo dir="rtl">该段落文字从右到左显示。</bdo></p>    <!-- 文字从又到左显示 -->
+<p>My favorite color is <del>blue</del></p>             <!-- 删除字体 -->
+<p><ins>red</ins>!</p>                                  <!-- 字体中加下划线 -->
+
+<table border="1" cellpadding="10">                     <!-- 表格，border表示画边框，单元格边距为10 -->
+<caption>标题</caption>
+<th>标题栏一</th>
+<th>标题栏二</th>
+<th>标题栏三</th>
+<tr>
+  <td>V</td>
+  <td>l</td>
+  <td>u</td>
+</tr>
+<tr>
+  <td colspan="2">m</td>                                <!-- 单元格跨两格 -->
+  <td>m</td>
+</tr>
+</table>
+
+<table border="1" cellspacing="0" >                     <!-- 垂直标题，单元格间距为0 -->      
+<tr>
+  <th>First Name:</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th rowspan="2">Telephone:</th>                       <!-- 单元格跨两列 -->
+  <td>555 77 854</td> 
+</tr>
+<tr>
+  <td>555 77 855</td>
+</tr>
+</table>
+
+<ul>                                                    <!-- 无序列表 -->  
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ul>
+<ul style="list-style-type:disc">                       <!-- 每一项前面加一个黑点（circle加空心圆，square加小方块） -->
+  <li>Apples</li>
+  <li>Bananas</li>
+  <li>Lemons</li>
+</ul>
+<ul style="list-style-image:url('');">                  <!-- 每一项前面加指定图片  -->
+  <li>Bananas</li>
+  <li>Lemons</li>
+</ul>
+<ol start="50">                                         <!-- 有序列表，序号从50开始 -->
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ol>
+<ol type="A">                                           <!-- 序号从A开始，还可改为罗马数字 -->
+  <li>咖啡</li>
+  <li>茶</li>
+  <li>牛奶</li>
+</ol> 
+<dl>                                                    <!-- 自定义列表 --> 
+  <dt>VLU</dt>
+  <dt>Coffee</dt>      
+  <dd>- black hot drink</dd>
+  <dd>hhh</dd>
+  <dt>Milk</dt>
+  <dd>- white cold drink</dd>
+</dl>
+
+<div class="ex" style="color:#0000FF">                             <!-- div划分一个区域并对该区域样式化 -->
+  <h3>这是一个在div元素中的标题。</h3>
+  <p>这是一个在div元素中的文本。</p>
+</div>
+
+<div id="container" style="width:800px;height:300px">   <!-- 运用div实例 -->
+<div id="header" style="background-color:#FFA500;height:100px">
+<h1 style="margin-bottom:0;">Main Title of Web Page</h1></div>
+<div id="menu" style="background-color:#FFD700;height:300px;width:100px;float:left;">
+<b>Menu</b><br>
+HTML<br>
+CSS<br>
+JavaScript</div>
+<div id="content" style="background-color:#EEEEEE;height:300px;width:700px;float:left;">
+Content goes here</div>
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">
+Copyright © w3cschool.cn</div>
+</div>
+<br><br><br><br><br><br><br>
+
+<table width="500" border="0">                          <!-- 运用表格实例（类似div） -->   
+<tr>
+<td colspan="2" style="background-color:#FFA500;">
+<h1>Main Title of Web Page</h1>
+</td>
+</tr>
+<tr>
+<td style="background-color:#FFD700;width:100px;">
+<b>Menu</b><br>
+HTML<br>
+CSS<br>
+JavaScript
+</td>
+<td style="background-color:#eeeeee;height:200px;width:100px;">
+Content goes here</td>
+</tr>
+<tr>
+<td colspan="2" style="background-color:#FFA500;text-align:center;">
+Copyright  © w3cschool.cn</td>
+</tr>
+</table>
+
+<form action="">                                        <!-- 表单，文本字段的默认宽度是20个字符 -->
+<fieldset>                                              <!-- 表单边框 -->
+<legend>Personal information:</legend>                  
+First name: <input type="text" name="firstname"><br>    <!-- 输入文本 -->
+Last name: <input type="text" name="lastname"><br>
+Password: <input type="password" name="pwd"><br>        <!-- 密码字段，输入时不显示 -->
+<input type="radio" name="sex" value="male">Male<br>    <!-- 单选按钮 -->
+<input type="radio" name="sex" value="female">Female<br>
+<input type="checkbox" name="vehicle" value="Bike">I have a bike<br><!-- 复选框 -->
+<input type="checkbox" name="vehicle" value="Car">I have a car<br>
+Username: <input type="text" name="user">                
+<input type="submit" value="Submit"><br>                <!-- 提交按钮，当用户单击确认按钮时，表单的内容会被传送到另一个文件。表单的动作属性（action）定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关的处理。 -->
+<select name="cars">                                    <!-- 简单下拉列表 -->
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+</select>
+<select name="cars">                                    <!-- 有预选值的下拉列表 -->
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat" selected>Fiat</option>             <!-- 预选值 -->
+</select>
+</fieldset>
+</form>
+<br>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0<!-- 一个简单计算式例子 -->
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>                   <!-- 输出标签 -->
+</form>
+<br>
+<textarea rows="10" cols="30">
+我是一个文本框。
+</textarea>                                             <!-- 文本区 -->
+<br>
+
+<iframe src="https://www.w3cschool.cn/html/html-iframes.html" width="500" height="500" frameborder="1"></iframe><br>
+<!-- <iframe> 标签规定一个内联框架,一个内联框架被用来在当前 HTML 文档中嵌入另一个文档,frameborder为定义边框。 -->
+<iframe src="/statics/demosource/demo_iframe.htm" name="iframe_a"></iframe>
+<p><a href="http://www.w3cschool.cn" target="iframe_a">W3CSCHOOL.CN</a></p>
+<!-- 点击链接时页面会显示在名叫“iframe_a”iframe框架中 -->
+<script>                                                
+document.write("Hello World!")
+</script>                                               <!-- 插入一段脚本 -->
+<noscript>抱歉，你的浏览器不支持 JavaScript!</noscript> <!-- 当浏览器不支持...时显示此段话 -->
+<br>
+<script>                                                
+function myFunction1()
+{
+document.getElementById("demo1").innerHTML="Hello JavaScript!";
+} 
+</script>                                               <!-- JavaScript事件响应 -->
+<p id="demo1">
+JavaScript can react to events. Like the click of a button.
+</p>
+<button type="button" onclick="myFunction1()">Click Me!</button>
+
+<p id="demo2">
+JavaScript 能改变 HTML 元素的样式。 
+</p>
+<script>
+function myFunction2()
+{
+	x=document.getElementById("demo2")       // 找到元素
+	x.style.color="#ff0000";                 // 改变样式
+}
+</script>                                               <!-- JavaScript改变HTML元素的样式 --> 
+<button type="button" onclick="myFunction2()">点击这里</button><br><br>
+<button onclick="this.innerHTML=Date()">现在的时间是?</button>
+
+<object width="400" height="50" data=""></object><br>
+<!-- object标签用于插入对象 (例如在网页中嵌入 Java 小程序, PDF 阅读器, Flash 播放器)，同样可用于包含HTML文件-->
+<embed height="50" width="100" src="宫崎骏-妖精的旋律.mp3"><br>
+<audio controls>
+  <source src="CLANNAD潮鳴り.mp3" type="audio/mpeg">
+</audio>
+<p><a href="unravel.mp3">Play mp3</a></p>
+<!-- 插入音乐的四种方法-->
+
+<!--
+<embed src="HHH.mp4" width="400" height="400"><br>
+<object data="HHH.mp4" height="400" width="400"></object><br>
+<video width="400" height="400" controls>
+  <source src="HHH.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.webm" type="video/webm">
+</video>
+<a href="HHH.mp4">Play a video file</a>
+//插入视频的四种方法
+-->
+
+<div>nihao</div>
+<p>点击按钮检测年龄</p>
+<input id="age" value="">
+<p>是否达到投票年龄？</p>
+<button onclick="myFunction4()">点击按钮</button>
+<p id="demo3"></p>
+
+
+</body>
+</html>
